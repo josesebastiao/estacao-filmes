@@ -7,3 +7,27 @@
   margin: 0;
 }
 
+header{
+  display:fixed;
+  text-align:center;
+  margin: 14px 37px 5px 37px;
+  height: 20vh;
+}
+
+ul{
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  margin-top:7px;
+}
+
+.logo{
+  height:40%;
+}
+
+.icon{
+  height:5vh;
+  width:5vh;
+}
