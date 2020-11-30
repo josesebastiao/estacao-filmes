@@ -14,7 +14,7 @@ header{
   text-align:center;
   height:15vh;
   border-bottom: 1px solid gray;
-background-color: white;
+  background-color: white;
 }
 
 ul{
@@ -23,7 +23,7 @@ ul{
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
-  margin-top:2.5%;
+  margin-top:7px;
 }
 
 .logo{
