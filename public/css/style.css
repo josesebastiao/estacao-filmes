@@ -12,8 +12,7 @@ header{
   position: fixed;
   width: 90%;
   text-align:center;
-  height:15vh;
-  border-bottom: 1px solid gray;
+  height:20vh;
   background-color: white;
 }
 
@@ -23,11 +22,11 @@ ul{
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-between;
-  margin-top:7px;
+  margin:7px 0;
 }
 
 .logo{
-  height:50%;
+  height:40%;
 }
 
 .icon{
@@ -38,4 +37,16 @@ ul{
 svg:hover path {
   fill: gray;
   stroke: gray;
+}
+
+input{
+  width: 80%;
+  height:20px;
+  border-radius:8px;
+  background-color: #0E2137;
+  color:#E0E0E0;
+}
+
+input::placeholder{
+  color:#E0E0E0;
 }
