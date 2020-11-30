@@ -34,3 +34,8 @@ ul{
   height:2em;
   width:2em;
 }
+
+svg:hover path {
+  fill: gray;
+  stroke: gray;
+}
