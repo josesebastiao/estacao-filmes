@@ -8,10 +8,13 @@
 }
 
 header{
-  display:fixed;
+  padding: 14px 5% 5px 5%;
+  position: fixed;
+  width: 90%;
   text-align:center;
-  margin: 14px 37px 5px 37px;
-  height: 20vh;
+  height:15vh;
+  border-bottom: 1px solid gray;
+background-color: white;
 }
 
 ul{
@@ -24,10 +27,10 @@ ul{
 }
 
 .logo{
-  height:40%;
+  height:50%;
 }
 
 .icon{
-  height:5vh;
-  width:5vh;
+  height:2em;
+  width:2em;
 }
