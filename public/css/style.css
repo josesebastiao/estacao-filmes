@@ -94,8 +94,9 @@ input::placeholder{
   color: #0E2137;
 }
 
-main {
-  height: 800px;
+
+main p {
+  font-size: 1.6rem;
 }
 
 footer {
@@ -103,6 +104,7 @@ footer {
   border-top: 1px solid #0E2137;
   padding: 2%;
   text-align: center;
+  margin-top: 2%;
 }
 
 footer span {
@@ -177,7 +179,7 @@ h1, h4{
 }
 
 .desktop-menu {
-  min-width: 30%;
+  min-width: 25%;
   padding: 2% 0;
   border: 2px solid #0E2137;
   border-radius: 8px;
@@ -217,6 +219,17 @@ h1, h4{
 .desktop-menu {
   display: none;
 } */
+
+
+
+
+
+
+
+
+
+/* about */
+
 .devs{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
