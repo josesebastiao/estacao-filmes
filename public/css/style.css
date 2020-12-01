@@ -231,12 +231,14 @@ h1, h4{
 /* about */
 
 .devs{
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
-  margin: 10%;
-  border-radius: 5px;
-
+  
+  width: 100%; 
+  margin: 10% auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  
+  border: solid 1px red;
 }
 
 .devs:hover {
@@ -247,6 +249,16 @@ img {
   border-radius: 5px 5px 0 0;
 }
 
+<<<<<<< HEAD
+.devs-container{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 10% auto;
+  border-radius: 5px;
+}
+=======
 devs-container{
   padding: 2px 16px;
 }
+>>>>>>> 54005e951a28d0082c4b1d8917a4a1c8fe8eb954
