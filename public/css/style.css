@@ -123,3 +123,99 @@ h1{
   padding: 2%;
   margin: 4%;
 }
+
+
+
+
+
+/* DESKTOP */
+
+.desktop {
+  min-width: 100%;
+  display: flex;
+  margin: 2% auto;
+  align-items: center;
+  border-bottom: 2px solid #0E2137;
+  padding-bottom: 2%;
+}
+
+.desktop .logo-desktop {
+  width: 30%;
+  padding: 0 4%;
+}
+
+.desktop .logo-desktop img {
+  width: 100%;
+}
+
+.desktop .search {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop .search input {
+  height: auto;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 2%;
+}
+
+.desktop .search input:focus {
+  outline: none;
+}
+
+.desktop .search svg {
+  margin-left: -100%;
+}
+
+.desktop .heart-fav {
+  flex: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.desktop-menu {
+  min-width: 30%;
+  padding: 2% 0;
+  border: 2px solid #0E2137;
+  border-radius: 8px;
+  margin: 2%;
+  height: fit-content;
+}
+
+.desktop-menu .menu {
+  margin: 0;
+  background-color: #fff;
+}
+
+.desktop-menu .menu li {
+  border: none;
+  text-align: center;
+  background-color: #0E2137;
+  color: #fff;
+  margin: 4% auto;
+}
+
+.desktop-menu .menu li ul {
+  display: none;
+}
+
+.desktop-menu .menu li ul li {
+  border-top: 1px solid #fff;
+  background-color: #0E2137;
+  opacity: 0.8;
+}
+
+.desktop-menu .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* .desktop,
+.desktop-menu {
+  display: none;
+} */
