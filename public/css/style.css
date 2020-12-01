@@ -17,7 +17,6 @@ header{
 .logo{
   width: 50%;
   padding: 2%;
-  margin-bottom: 2%;
 }
 
 ul{
@@ -25,8 +24,10 @@ ul{
   flex-wrap: wrap;
   list-style: none;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: 2% auto;
 }
+
+
 
 .icon{
   height: 2em;
