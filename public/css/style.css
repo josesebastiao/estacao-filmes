@@ -103,6 +103,7 @@ footer {
   border-top: 1px solid #0E2137;
   padding: 2%;
   text-align: center;
+  margin-top: 2%;
 }
 
 footer span {
@@ -177,7 +178,7 @@ h1, h4{
 }
 
 .desktop-menu {
-  min-width: 30%;
+  min-width: 25%;
   padding: 2% 0;
   border: 2px solid #0E2137;
   border-radius: 8px;
