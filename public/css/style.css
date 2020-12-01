@@ -55,7 +55,6 @@ input::placeholder{
   background-color: #fff;
   display: block;
   margin-top: 3%;
-
 }
 .menu li {
   font-size: 2rem;
@@ -86,7 +85,7 @@ input::placeholder{
   background-color: #E0E0E0;
 }
 
-.menu li ul li:hover {
+.menu li ul li a:hover {
   color: #EB2FA0;
 }
 
