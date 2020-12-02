@@ -1,0 +1,85 @@
+header{
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+  
+.logo {
+  width: 50%;
+  padding: 2%;
+}
+  
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+  margin: 2% auto;
+}
+  
+.icon{
+  height: 2em;
+  width: 2em;
+}
+  
+svg:hover path {
+  fill: #EB2FA0;
+  stroke: #EB2FA0;
+}
+  
+input{
+  width: 80%;
+  height:20px;
+  border-radius:8px;
+  background-color: #0E2137;
+  color:#E0E0E0;
+}
+  
+input::placeholder{
+  color:#E0E0E0;
+}
+  
+.menu {
+  width: 100%;
+  background-color: #fff;
+  display: block;
+  margin-top: 3%;
+}
+
+.menu li {
+  font-size: 2rem;
+  padding: 2% 0;
+  border: 1px solid #0E2137;
+  position: relative;
+  display: block;
+  color: #0E2137;
+}
+  
+.menu li.active::after {
+  content: "";
+  width: 5%;
+  height: 100%;
+  background-color: #EB2FA0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+ 
+.menu li ul {
+  display: block;
+  width: 100%;
+}
+  
+.menu li ul li {
+  border: 0;
+  background-color: #E0E0E0;
+}
+  
+.menu li ul li a:hover {
+  color: #EB2FA0;
+}
+  
+.menu li a {
+  text-decoration: none;
+  color: #0E2137;
+}
