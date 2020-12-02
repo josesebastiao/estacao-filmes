@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import './header.css';
 
+:root {
+  /* 
+  essa tag funciona para armazenar "variáveis css" deem uma googlada e tirem proveito, ela facilita muita coisa no código
+  */
+}
+
 * {
   font-family: 'Itim', sans-serif;
   border: 0;
