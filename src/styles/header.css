@@ -58,7 +58,8 @@ input::placeholder{
   color: #0E2137;
 }
   
-.menu li.active::after {
+.menu li.active a::after,
+.menu li:hover a::after {
   content: "";
   width: 5%;
   height: 100%;
@@ -67,7 +68,7 @@ input::placeholder{
   top: 0;
   left: 0;
 }
- 
+
 .menu li ul {
   display: block;
   width: 100%;

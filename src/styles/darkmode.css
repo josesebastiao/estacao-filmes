@@ -1,0 +1,39 @@
+.darkmode-header {
+    background-color: #0E2137;
+}
+
+.desktop .logo-desktop.darkmode img {
+    display: inline;
+}
+
+
+.desktop .logo-desktop.light {
+  display: none;
+}
+
+.desktop.darkmode{
+    border-bottom: 2px solid #EB2FA0;
+}
+
+.search.darkmode {
+  background-color: #E0E0E0;
+}
+
+svg.icon.search.darkmode path {
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
+}
+
+
+svg.icon.heart.darkmode path {
+  fill: #EB2FA0;
+  stroke: #EB2FA0;
+}
+
+.wrapper.darkmode {
+    background-color: #010C17;
+}
+
+.desktop-menu.darkmode {
+  border: 2px solid #EB2FA0;
+}

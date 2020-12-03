@@ -2,6 +2,7 @@
 @import './header.css';
 @import './popupdiv.css';
 @import './card.css';
+@import './darkmode.css';
 
 :root {
   /* 
@@ -22,6 +23,7 @@ main {
   font-size: 1.6rem;
   color: #0E2137;
   padding: 2%;
+  padding-bottom: 4%;
 }
 
 footer {
@@ -29,7 +31,6 @@ footer {
   border-top: 1px solid #0E2137;
   padding: 2%;
   text-align: center;
-  margin-top: 2%;
 }
 
 footer span {
@@ -76,6 +77,8 @@ h6 {
   min-width: 100%;
   display: flex;
   margin: 2% auto;
+  margin-top: 0;
+  padding-top: 2%;
   align-items: center;
   border-bottom: 2px solid #0E2137;
   padding-bottom: 2%;
@@ -84,6 +87,12 @@ h6 {
 .desktop .logo-desktop {
   width: 30%;
   padding: 0 4%;
+}
+
+.desktop .logo-desktop.dark img {
+  width: 30%;
+  padding: 0 4%;
+  display: none;
 }
 
 .desktop .logo-desktop img {
