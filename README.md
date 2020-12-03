@@ -2,7 +2,6 @@
 > WIP = Work in progress. :art: Estação Filmes foi nosso Projeto Integrador feito durante o programa FrontEnd Coding fornecido pela Digital House em parceria com o Estação Hack from Facebook
 
 <p align="center"><img src="https://github.com/marianasmmattos/estacao-filmes/blob/main/public/assets/logo-light.svg" width=400 alt="Estação Filmes">
-<h1 align="center">Estação Filmes<h1>
 </p>
 
 ### :100: Conheça a equipe

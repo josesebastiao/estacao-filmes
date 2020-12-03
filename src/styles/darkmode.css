@@ -1,0 +1,126 @@
+li.darkmode {
+    padding-right: 10px;
+}
+
+label#darkmode {
+    align-self: baseline;
+
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 25px;
+    height: 17px;
+    background: rgba(128, 128, 128, 0.363);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+
+    z-index: 4;
+}
+
+label#darkmode input {
+    background: rgba(128, 128, 128, 0.712);
+    position: relative; 
+    cursor: pointer;
+    opacity: 0.01;
+    width: 25px;
+    height: 17px;
+    z-index: 3;
+}
+
+label#darkmode span::after{
+    cursor: pointer;
+    content: '';
+    position: absolute;
+    top:5px;
+    right: 16px;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 90px;
+    transition: .3s;
+}
+
+#darkmode > input[type=checkbox]:checked + span::after {
+    right: 1px;
+}
+
+body.darkmode .desktop .logo-desktop.dark img {
+    display: block;
+}
+
+.desktop .logo-desktop.dark img{
+  display: none;
+}
+
+
+body.darkmode .desktop .logo-desktop.light {
+  display: none;
+}
+
+body.darkmode .desktop {
+    background-color: #0E2137;
+    border-bottom: 2px solid #EB2FA0;
+}
+
+body.darkmode .search input {
+  background-color: #E0E0E0;
+}
+
+body.darkmode svg.icon.search path {
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
+}
+
+
+body.darkmode svg.icon.heart path {
+  fill: #EB2FA0;
+  stroke: #EB2FA0;
+}
+
+body.darkmode .wrapper,
+body.darkmode footer {
+    border-top: 1px solid #EB2FA0;
+    background-color: #010C17;
+}
+
+body.darkmode footer span {
+    color: #E0E0E0;
+}
+
+body.darkmode .desktop-menu {
+  border: 2px solid #EB2FA0;
+}
+
+body.darkmode .menu,
+body.darkmode .mobile {
+    background-color: #0E2137;
+}
+
+body.darkmode nav.desktop-menu ul {
+    background-color: #010C17;
+}
+
+body.darkmode header.mobile {
+    padding-bottom: 2%;
+}
+
+body.darkmode header.mobile .light {
+    display: none;
+}
+
+body.darkmode header.mobile .dark {
+  display: block;
+}
+
+body.darkmode header.mobile svg.icon {
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
+}
+
+body.darkmode nav ul li a {
+    color:  #E0E0E0;
+}
+
+body.darkmode nav ul li {
+    border: 1px solid #EB2FA0;
+}

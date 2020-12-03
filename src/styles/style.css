@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import './header.css';
+@import './popupdiv.css';
+@import './card.css';
+@import './darkmode.css';
+
+:root {
+  /* 
+  essa tag funciona para armazenar "variáveis css" deem uma googlada e tirem proveito, ela facilita muita coisa no código
+  */
+}
+
+* {
+  font-family: 'Itim', sans-serif;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #0E2137;
+  padding: 2%;
+  padding-bottom: 4%;
+}
+
+footer {
+  padding: 0;
+  border-top: 1px solid #0E2137;
+  padding: 2%;
+  text-align: center;
+}
+
+footer span {
+  font-size: 1rem;
+  color: #0E2137;
+}
+
+
+.text1{
+  text-align: justify;
+}
+
+h1, h4{
+  text-align: center;
+  padding: 2%;
+}
+
+h6 {
+  font-size: 1.6rem;
+  color: #EB2FA0;
+  margin-top: 5%;
+}
+
+
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .mobile {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .desktop,
+  .desktop-menu {
+    display: none !important;
+  }
+}
+
+.desktop {
+  min-width: 100%;
+  display: flex;
+  margin: 2% auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 2%;
+  align-items: center;
+  border-bottom: 2px solid #0E2137;
+  padding-bottom: 2%;
+}
+
+.desktop .logo-desktop {
+  width: 30%;
+  padding: 0 4%;
+}
+
+.desktop .logo-desktop img {
+  width: 70%;
+}
+
+.desktop .search {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-page input,
+.desktop .search input {
+  height: auto;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 2%;
+}
+
+.search-page input,
+.desktop .search input:focus {
+  outline: none;
+}
+
+.desktop .search svg {
+  margin-left: -100%;
+}
+
+.desktop .heart-fav {
+  flex: auto;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.desktop-menu {
+  min-width: 25%;
+  padding: 2% 0;
+  border: 2px solid #0E2137;
+  border-radius: 8px;
+  margin: 2%;
+  height: fit-content;
+}
+
+.desktop-menu .menu {
+  margin: 0;
+  background-color: #fff;
+}
+
+.desktop-menu .menu li {
+  border: none;
+  text-align: center;
+  background-color: #0E2137;
+  color: #fff;
+  margin: 4% auto;
+}
+
+.desktop-menu .menu li ul {
+  display: none;
+}
+
+.desktop-menu .menu li:hover ul {
+  display: inline;
+}
+
+
+.desktop-menu .menu li ul li {
+  border-top: 1px solid #fff;
+  background-color: #0E2137;
+  opacity: 0.8;
+}
+
+.desktop-menu .menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.devs {
+  width: 85%; 
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row;
+  justify-content: space-around;
+  padding: 0%;
+}
+
+.devs:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.devs-container{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  margin: 4% auto;
+  border-radius: 5px;
+}
+
+.search-page {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-page svg.icon {
+  width: 1.2em;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#subcategory {
+  display: none;
+}
+
+header.mobile .light {
+  display: block;
+}
