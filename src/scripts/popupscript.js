@@ -3,7 +3,6 @@ let janelapop = document.querySelector('.pop');
 let corpo = document.querySelector('body');
 let heart = document.querySelector('.favourite');
 
-
 for (let imagem of imagens) {
     imagem.onmouseover = function() {
         janelapop.style.zIndex = 1;
