@@ -41,6 +41,12 @@ h1, h4{
   padding: 2%;
 }
 
+h6 {
+  font-size: 1.6rem;
+  color: #EB2FA0;
+  margin-top: 5%;
+}
+
 
 
 /* DESKTOP */
@@ -75,7 +81,7 @@ h1, h4{
 }
 
 .desktop .logo-desktop img {
-  width: 100%;
+  width: 70%;
 }
 
 .desktop .search {
@@ -182,4 +188,12 @@ img {
 
 .search-page svg.icon {
   width: 1.2em;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#subcategory {
+  display: none;
 }
