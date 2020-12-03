@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import './header.css';
+@import './popupdiv.css';
+@import './card.css';
 
 :root {
   /* 
@@ -16,7 +18,10 @@
 }
 
 main {
-  height: 900px;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #0E2137;
+  padding: 2%;
 }
 
 footer {
@@ -35,20 +40,37 @@ footer span {
 
 .text1{
   text-align: justify;
-  padding: 3%;
-  margin: 5%;
-
 }
 
 h1, h4{
   text-align: center;
   padding: 2%;
-  margin: 4%;
+}
+
+h6 {
+  font-size: 1.6rem;
+  color: #EB2FA0;
+  margin-top: 5%;
 }
 
 
 
 /* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .mobile {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .desktop,
+  .desktop-menu {
+    display: none !important;
+  }
+}
 
 .desktop {
   min-width: 100%;
@@ -65,7 +87,7 @@ h1, h4{
 }
 
 .desktop .logo-desktop img {
-  width: 100%;
+  width: 70%;
 }
 
 .desktop .search {
@@ -75,6 +97,7 @@ h1, h4{
   justify-content: space-around;
 }
 
+.search-page input,
 .desktop .search input {
   height: auto;
   font-size: 1.5rem;
@@ -82,6 +105,7 @@ h1, h4{
   padding: 0 2%;
 }
 
+.search-page input,
 .desktop .search input:focus {
   outline: none;
 }
@@ -135,14 +159,7 @@ h1, h4{
   text-decoration: none;
 }
 
-/* .desktop,
-.desktop-menu {
-  display: none;
-} */
-
-
-.devs{
-  
+.devs {
   width: 85%; 
   margin: auto;
   display: flex;
@@ -166,4 +183,23 @@ img {
   width: 30%;
   margin: 4% auto;
   border-radius: 5px;
+}
+
+.search-page {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-page svg.icon {
+  width: 1.2em;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#subcategory {
+  display: none;
 }
