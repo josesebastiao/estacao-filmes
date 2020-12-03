@@ -11,7 +11,7 @@
     <a href="/"><img src="/public/assets/logo-light.svg" alt="Logotipo Estação Filmes" class="logo"></a>
     <ul>
       <li>
-        <a href="">
+        <a onclick="hamburguer()" href="javascript:void(0);">
           <svg width="25.5" height="17.5" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
             <path d="M0 2H50M0.0468292 32.5H50.0468M0.0468292 17.5H50.0468" stroke="#0E2137" stroke-width="4"/>
           </svg>
@@ -33,13 +33,13 @@
       </li>
     </ul>
 
-    <nav>
+    <nav id="mobile-menu">
       <ul class="menu">
         <li><a href="/">Home</a></li>
         <li class="active"><a href="/favorites.html">Favoritos</a></li>
         <li><a href="/search.html">Pesquisar</a></li>
-        <li><a>Categorias</a>
-        <ul>
+        <li onclick="category()"><a>Categorias</a>
+          <ul id="subcategory">
             <li><a href="#">Ação</a></li>
             <li><a href="#">Drama</a></li>
             <li><a href="#">Comédia</a></li>
@@ -127,6 +127,7 @@
     <span>Copyright © 2020</span>
   </footer>
   
+  <script src="./src/scripts/script.js"></script>
   <script src="./src/scripts/dark-mode.js"></script>
 </body>
 </html>

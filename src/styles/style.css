@@ -34,15 +34,17 @@ footer span {
 
 .text1{
   text-align: justify;
-  padding: 3%;
-  margin: 5%;
-
 }
 
 h1, h4{
   text-align: center;
   padding: 2%;
-  margin: 4%;
+}
+
+h6 {
+  font-size: 1.6rem;
+  color: #EB2FA0;
+  margin-top: 5%;
 }
 
 
@@ -79,7 +81,7 @@ h1, h4{
 }
 
 .desktop .logo-desktop img {
-  width: 100%;
+  width: 70%;
 }
 
 .desktop .search {
@@ -89,6 +91,7 @@ h1, h4{
   justify-content: space-around;
 }
 
+.search-page input,
 .desktop .search input {
   height: auto;
   font-size: 1.5rem;
@@ -96,6 +99,7 @@ h1, h4{
   padding: 0 2%;
 }
 
+.search-page input,
 .desktop .search input:focus {
   outline: none;
 }
@@ -149,11 +153,7 @@ h1, h4{
   text-decoration: none;
 }
 
-
-
-
-.devs{
-  
+.devs {
   width: 85%; 
   margin: auto;
   display: flex;
@@ -177,4 +177,23 @@ img {
   width: 30%;
   margin: 4% auto;
   border-radius: 5px;
+}
+
+.search-page {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-page svg.icon {
+  width: 1.2em;
+}
+
+#mobile-menu {
+  display: none;
+}
+
+#subcategory {
+  display: none;
 }
