@@ -1,0 +1,45 @@
+.cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5%;
+  justify-content: space-between;
+}
+
+.card {
+  min-width: 40%;
+  max-width: 80%;
+  background-color: #0E2137;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-footer {
+  width: 100%;
+  background-color: #EB2FA0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-height: 15%;
+  min-height: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer p {
+  font-size: 1.2rem;
+  align-self: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .card-footer p {
+    font-size: 1rem;
+    align-self: center;
+    text-align: center;
+  }
+}
