@@ -3,7 +3,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 5%;
-  justify-content: space-between;
+  justify-content: center;
+  margin-bottom: 2%;
 }
 
 .card {
@@ -11,6 +12,7 @@
   max-width: 80%;
   background-color: #0E2137;
   position: relative;
+  justify-self: center;
 }
 
 .card img {
@@ -38,8 +40,20 @@
 
 @media (max-width: 1024px) {
   .card-footer p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     align-self: center;
     text-align: center;
   }
+}
+
+@media (max-width: 425px) {
+  .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+
 }
