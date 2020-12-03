@@ -78,6 +78,7 @@ h6 {
   display: flex;
   margin: 2% auto;
   margin-top: 0;
+  margin-bottom: 0;
   padding-top: 2%;
   align-items: center;
   border-bottom: 2px solid #0E2137;
@@ -87,12 +88,6 @@ h6 {
 .desktop .logo-desktop {
   width: 30%;
   padding: 0 4%;
-}
-
-.desktop .logo-desktop.dark img {
-  width: 30%;
-  padding: 0 4%;
-  display: none;
 }
 
 .desktop .logo-desktop img {
@@ -216,4 +211,8 @@ img {
 
 #subcategory {
   display: none;
+}
+
+header.mobile .light {
+  display: block;
 }

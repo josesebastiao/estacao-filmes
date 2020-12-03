@@ -2,7 +2,6 @@ header{
   width: 100%;
   text-align: center;
   background-color: white;
-  margin-bottom: 5%;
 }
   
 .logo {
@@ -16,6 +15,8 @@ ul{
   list-style: none;
   justify-content: space-around;
   margin: 2% auto;
+  padding-bottom: 2%;
+  margin-bottom: 0;
 }
   
 .icon{
@@ -86,4 +87,8 @@ input::placeholder{
 .menu li a {
   text-decoration: none;
   color: #0E2137;
+}
+
+header.mobile .dark {
+  display: none;
 }

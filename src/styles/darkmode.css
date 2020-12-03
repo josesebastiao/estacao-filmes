@@ -44,42 +44,83 @@ label#darkmode span::after{
     right: 1px;
 }
 
-.darkmode-header {
-    background-color: #0E2137;
+body.darkmode .desktop .logo-desktop.dark img {
+    display: block;
 }
 
-.desktop .logo-desktop.darkmode img {
-    display: inline;
-}
-
-
-.desktop .logo-desktop.light {
+.desktop .logo-desktop.dark img{
   display: none;
 }
 
-.desktop.darkmode{
+
+body.darkmode .desktop .logo-desktop.light {
+  display: none;
+}
+
+body.darkmode .desktop {
+    background-color: #0E2137;
     border-bottom: 2px solid #EB2FA0;
 }
 
-.search.darkmode {
+body.darkmode .search input {
   background-color: #E0E0E0;
 }
 
-svg.icon.search.darkmode path {
+body.darkmode svg.icon.search path {
   fill: #E0E0E0;
   stroke: #E0E0E0;
 }
 
 
-svg.icon.heart.darkmode path {
+body.darkmode svg.icon.heart path {
   fill: #EB2FA0;
   stroke: #EB2FA0;
 }
 
-.wrapper.darkmode {
+body.darkmode .wrapper,
+body.darkmode footer {
+    border-top: 1px solid #EB2FA0;
     background-color: #010C17;
 }
 
-.desktop-menu.darkmode {
+body.darkmode footer span {
+    color: #E0E0E0;
+}
+
+body.darkmode .desktop-menu {
   border: 2px solid #EB2FA0;
+}
+
+body.darkmode .menu,
+body.darkmode .mobile {
+    background-color: #0E2137;
+}
+
+body.darkmode nav.desktop-menu ul {
+    background-color: #010C17;
+}
+
+body.darkmode header.mobile {
+    padding-bottom: 2%;
+}
+
+body.darkmode header.mobile .light {
+    display: none;
+}
+
+body.darkmode header.mobile .dark {
+  display: block;
+}
+
+body.darkmode header.mobile svg.icon {
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
+}
+
+body.darkmode nav ul li a {
+    color:  #E0E0E0;
+}
+
+body.darkmode nav ul li {
+    border: 1px solid #EB2FA0;
 }
