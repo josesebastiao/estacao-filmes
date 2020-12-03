@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 @import './header.css';
 @import './popupdiv.css';
+@import './card.css';
 
 * {
   font-family: 'Itim', sans-serif;
@@ -11,7 +12,11 @@
 }
 
 main {
+  width: 100%;
+  font-size: 1.6rem;
+  color: #0E2137;
   height: 900px;
+  padding: 2%;
 }
 
 footer {
@@ -44,6 +49,21 @@ h1, h4{
 
 
 /* DESKTOP */
+
+@media (min-width: 768px) {
+
+  .mobile {
+    display: none;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .desktop,
+  .desktop-menu {
+    display: none !important;
+  }
+}
 
 .desktop {
   min-width: 100%;
@@ -130,10 +150,7 @@ h1, h4{
   text-decoration: none;
 }
 
-/* .desktop,
-.desktop-menu {
-  display: none;
-} */
+
 
 
 .devs{
