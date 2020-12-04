@@ -5,9 +5,6 @@ let heart = document.querySelector('.favourite');
 
 for (let imagem of imagens) {
     imagem.onmouseover = function() {
-        
-        console.log(imagem.offsetTop)
-
         janelapop.style.zIndex = 5;
         janelapop.style.opacity = 1;
         if ((imagem.offsetLeft + imagem.offsetWidth + janelapop.offsetWidth) <= corpo.offsetWidth) {
