@@ -8,7 +8,7 @@ for (let imagem of imagens) {
         
         console.log(imagem.offsetTop)
 
-        janelapop.style.zIndex = 1;
+        janelapop.style.zIndex = 5;
         janelapop.style.opacity = 1;
         if ((imagem.offsetLeft + imagem.offsetWidth + janelapop.offsetWidth) <= corpo.offsetWidth) {
             janelapop.style.left = `${imagem.offsetLeft + imagem.offsetWidth}px`;
@@ -24,7 +24,7 @@ for (let imagem of imagens) {
     };
 
     janelapop.onmouseover = function() {
-        janelapop.style.zIndex = 1;
+        janelapop.style.zIndex = 5;
         janelapop.style.opacity = 1;
     };
 

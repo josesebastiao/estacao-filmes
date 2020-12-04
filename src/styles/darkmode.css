@@ -124,3 +124,8 @@ body.darkmode nav ul li a {
 body.darkmode nav ul li {
     border: 1px solid #EB2FA0;
 }
+
+.pop.darkmode {
+  color:  #E0E0E0;
+  background-color: #010C17
+}
