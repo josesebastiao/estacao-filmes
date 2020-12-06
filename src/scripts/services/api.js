@@ -6,8 +6,8 @@ async function buscarPopulares(){
     return json.results;
 }
 
-async function gerarCards() {
-    const filmes = await buscarPopulares();
+async function gerarCards(listaFilmes) {
+    const filmes = await listaFilmes();
     const sectionCards = document.getElementsByClassName('cards')[0];
     filmes.forEach(
         filme => {
@@ -22,19 +22,6 @@ async function gerarCards() {
             `
         }
     );
-
 }
 
-gerarCards();
-
-// fetch("https://api.themoviedb.org/3/movie/popular?api_key=54d5d6e26602b36d146edeb90b272ae5&language=pt-BR&page=1")
-// .then(function(response){
-//     return response.json();
-// })
-// .then(function(populares){
-//     console.log(populares);
-// })
-
-// (function(){
-//     console.log('auto-importada')
-//     })()
+gerarCards(buscarPopulares);
