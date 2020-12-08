@@ -4,12 +4,6 @@
 @import './card.css';
 @import './darkmode.css';
 
-:root {
-  /* 
-  essa tag funciona para armazenar "variáveis css" deem uma googlada e tirem proveito, ela facilita muita coisa no código
-  */
-}
-
 * {
   font-family: 'Itim', sans-serif;
   border: 0;

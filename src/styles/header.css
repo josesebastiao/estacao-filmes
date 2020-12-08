@@ -19,9 +19,11 @@ ul{
   margin-bottom: 0;
 }
   
-.icon{
-  height: 2em;
-  width: 2em;
+.icon-hamburguer,
+.icon-search,
+.icon-heart{
+  height: 2rem;
+  width: 2rem;
 }
   
 svg:hover path {
