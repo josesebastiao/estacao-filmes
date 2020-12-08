@@ -21,12 +21,20 @@ ul{
   
 .icon-hamburguer,
 .icon-search,
-.icon-heart{
+.icon-hart{
   height: 2rem;
   width: 2rem;
 }
-  
-svg:hover path {
+
+.icon-hamburguer:hover path {
+  stroke: #EB2FA0;
+}
+
+.icon-search:hover path {
+  fill: #EB2FA0;
+}
+
+.icon-hart:hover path {
   fill: #EB2FA0;
   stroke: #EB2FA0;
 }

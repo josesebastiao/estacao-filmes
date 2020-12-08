@@ -68,51 +68,53 @@ h6 {
 }
 
 .desktop {
-  min-width: 100%;
-  display: flex;
-  margin: 2% auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 2%;
-  align-items: center;
-  border-bottom: 2px solid #0E2137;
-  padding-bottom: 2%;
-}
-
-.desktop .logo-desktop {
-  width: 30%;
-  padding: 0 4%;
-}
-
-.desktop .logo-desktop img {
-  width: 70%;
-}
-
-.desktop .search {
-  width: 60%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: 2px solid #0E2137;
+  padding: 1%;
+}
+
+.desktop .div-logo {
+  width: 30%;
+}
+
+.desktop .div-logo img{
+  width: 60%;
+}
+
+.desktop .div-search {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.desktop .div-hart svg {
+  width: 80%;
+  margin-left: -50%;
 }
 
 .search-page input,
-.desktop .search input {
+.desktop .div-search input {
   height: auto;
   font-size: 1.5rem;
   line-height: 2rem;
   padding: 0 2%;
+  margin-right: 1%;
 }
 
 .search-page input,
-.desktop .search input:focus {
+.desktop .div-search input:focus {
   outline: none;
 }
 
-.desktop .search svg {
-  margin-left: -100%;
-}
 
-.desktop .heart-fav {
+.desktop .hart-fav {
   flex: auto;
 }
 

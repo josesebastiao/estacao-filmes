@@ -57,12 +57,25 @@ body.darkmode .desktop .logo-desktop.light {
   display: none;
 }
 
+body.darkmode .desktop .logo-desktop.light img {
+  display: none;
+}
+
 body.darkmode .desktop {
     background-color: #0E2137;
     border-bottom: 2px solid #EB2FA0;
 }
 
-body.darkmode .search input {
+body.darkmode .desktop .div-search svg path {
+  fill: #E0E0E0;
+}
+
+body.darkmode .desktop .div-hart svg path {
+  fill: #E0E0E0;
+  stroke: #E0E0E0;
+}
+
+body.darkmode .div-search input {
   background-color: #E0E0E0;
   color: #0E2137;
 }
@@ -71,9 +84,8 @@ body.darkmode svg.icon-search path {
   fill: #E0E0E0;
 }
 
-
 body.darkmode svg.icon-hamburguer path,
-body.darkmode svg.icon-heart path {
+body.darkmode svg.icon-hart path {
   fill: #EB2FA0;
   stroke: #EB2FA0;
 }
@@ -113,6 +125,14 @@ body.darkmode header.mobile .dark {
   display: block;
 }
 
+body.darkmode header.desktop .light {
+  display: none;
+}
+
+body.darkmode header.desktop .dark {
+display: block;
+}
+
 body.darkmode header.mobile svg.icon {
   fill: #E0E0E0;
   stroke: #E0E0E0;
@@ -139,4 +159,12 @@ body.darkmode .devs-container {
 .pop.darkmode {
   color:  #E0E0E0;
   background-color: #010C17
+}
+
+header.desktop a.div-logo.dark {
+  display: none;
+}
+
+body.darkmode header.desktop a.div-logo.dark {
+  display: block;
 }
