@@ -57,6 +57,9 @@ h6 {
   .mobile {
     display: none;
   }
+  .search-page {
+    display: none !important;
+  }
 
 }
 
@@ -65,6 +68,7 @@ h6 {
   .desktop-menu {
     display: none !important;
   }
+  
 }
 
 .desktop {

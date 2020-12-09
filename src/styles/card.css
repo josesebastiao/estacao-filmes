@@ -1,4 +1,5 @@
-.cards {  
+.cards,
+.search-cards {  
   display: flex;
   flex-direction: row;
   width: 100%;

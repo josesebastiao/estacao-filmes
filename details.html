@@ -65,7 +65,7 @@
 
     <div class="div-search">
       <input class="search" type="text" name="search" id="search">
-      <a href="/search.html">
+      <a href="javascript:void(0)" onclick=searchSubmit()>
         <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon search">
           <path d="M26.2917 23.1667H24.6458L24.0625 22.6042C26.1042 20.2292 27.3333 17.1458 27.3333 13.7917C27.3333 6.3125 21.2708 0.25 13.7917 0.25C6.3125 0.25 0.25 6.3125 0.25 13.7917C0.25 21.2708 6.3125 27.3333 13.7917 27.3333C17.1458 27.3333 20.2292 26.1042 22.6042 24.0625L23.1667 24.6458V26.2917L33.5833 36.6875L36.6875 33.5833L26.2917 23.1667V23.1667ZM13.7917 23.1667C8.60417 23.1667 4.41667 18.9792 4.41667 13.7917C4.41667 8.60417 8.60417 4.41667 13.7917 4.41667C18.9792 4.41667 23.1667 8.60417 23.1667 13.7917C23.1667 18.9792 18.9792 23.1667 13.7917 23.1667Z" fill="#0E2137"/>
         </svg>
@@ -107,7 +107,7 @@
         <div class="card">
           <img src="./public/assets/img_movie.png" alt="">
           <div class="card-footer">
-            <p>Avengers End Game</p>
+            <p>{filme.title}</p>
           </div>
         </div>
 
@@ -119,27 +119,27 @@
 
       <h6>Título:</h6>
       <p>
-        Avengers End Game
+        {filme.title}
       </p>
 
       <h6>Gênero:</h6>
       <p>
-        Ação
+        {filme.genre}
       </p>
 
       <h6>Lançamento:</h6>
       <p>
-        2019
+        {filme.release}
       </p>
 
       <h6>Diretor:</h6>
       <p>
-        Anthony Russo
+        {filme.director}
       </p>
 
       <h6>Sinopse:</h6>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique, felis condimentum maximus laoreet, purus sapien varius ligula, sed tristique lacus massa at leo. Phasellus egestas posuere odio, a egestas enim molestie in. Morbi in mauris quis sem mollis lacinia. 
+        {filme.overview}
       </p>
 
     </main>
