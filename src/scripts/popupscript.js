@@ -17,37 +17,6 @@ async function buscarGeneroFilme(){
 };
 
 buscarGeneroFilme();
-//clicar categoria
-let subcategories = document.getElementsByClassName("subcategories");
-for(let subcategory of subcategories){
-    subcategory.onclick = function() {
-        const sectionCards = document.getElementsByClassName('cards')[0];
-        while (sectionCards.firstChild) {
-            sectionCards.removeChild(sectionCards.lastChild)
-        };
-        fetch("https://api.themoviedb.org/3/discover/movie?api_key=54d5d6e26602b36d146edeb90b272ae5&language=pt-BR&page=2&with_genres="+subcategory.id)
-        .then(function(response){
-            return response.json();
-        })
-        .then(function(filmes){
-            filmes.results.forEach(
-                (filme, indice) => {
-                    sectionCards.innerHTML += `
-                    <div class="card" id="${indice}">
-                        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/${filme.poster_path}" alt="">
-                        <div class="card-footer">
-                        <p>${filme.title}</p>
-                        </div>
-                    </div>
-                    `
-                }
-            );
-            sessionStorage.setItem('filmes',JSON.stringify(filmes.results));
-            preenchePopup();
-        })
-        .catch(console.log.bind(console));
-    }
-};
 
 console.log(generos);
 let t = 500;
@@ -81,7 +50,8 @@ function preenchePopup() {
             if ((imagem.offsetLeft + imagem.offsetWidth + janelapop.offsetWidth) <= corpo.offsetWidth) {
                 janelapop.style.left = `${imagem.offsetLeft + imagem.offsetWidth}px`;
             } else {
-                janelapop.style.left = `${imagem.offsetLeft - janelapop.offsetWidth}px`;
+                let vl = imagem.offsetLeft - janelapop.offsetWidth > 0 ? imagem.offsetLeft - janelapop.offsetWidth : 0; 
+                janelapop.style.left = `${vl}px`;
             };
             janelapop.style.top = `${imagem.offsetTop}px`;
             buscaDiretores(filmes[imagem.getAttribute("id")].id);
@@ -142,5 +112,3 @@ function buscaDiretores(idFilme){
     })
     .catch(console.log.bind(console));
 };
-
-buscarPopulares();
