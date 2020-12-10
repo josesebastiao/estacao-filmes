@@ -1,5 +1,7 @@
 let generos = [];
 
+console.log('pop');
+
 async function buscarGeneroFilme(){
     fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=54d5d6e26602b36d146edeb90b272ae5&language=pt-BR")
     .then(function(response){
@@ -82,6 +84,7 @@ function preenchePopup() {
                 janelapop.style.left = `${imagem.offsetLeft - janelapop.offsetWidth}px`;
             };
             janelapop.style.top = `${imagem.offsetTop}px`;
+            buscaDiretores(filmes[imagem.getAttribute("id")].id);
             let resumofilme = filmes[imagem.getAttribute("id")].overview;
             if (resumofilme == "") {resumofilme = "Sinopse não encontrada."};
             document.getElementById("h1titulofilme").innerText = filmes[imagem.getAttribute("id")].title;
@@ -89,7 +92,6 @@ function preenchePopup() {
             document.getElementById("resumofilme").innerText = resumofilme;
             document.getElementById("anofilme").innerText = filmes[imagem.getAttribute("id")].release_date.substr(0,4);
             document.getElementById("generofilme").innerText = generoFilme;
-            buscaDiretores(filmes[imagem.getAttribute("id")].id);
         };
         
         imagem.onmouseleave = function() {

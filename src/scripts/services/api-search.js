@@ -47,6 +47,7 @@ function buscarFilme() {
               `
           }
       );
+      sessionStorage.setItem('filmes',JSON.stringify(filmes.results));
   })
 }
 
