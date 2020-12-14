@@ -1,8 +1,13 @@
-let filmesFavoritos = [];
+const addFav = document.querySelectorAll('path.favourite'); //retorna um array
 
-function addFilmeFavorito(title, cover) {
+function addFilmeFavorito() { // como vou fazer essa função ser ouvida por todos do array? forEach?
 
-  var index = filmesFavoritos.findIndex(i => i.name === title );
+  let filmesFavoritos = [];
+  
+  let title = this.title // definitivamente não seria exatamente assim, mas pensei que seria inteligente usarmos o this
+  let cover = this.image 
+
+  var index = filmesFavoritos.findIndex(i => i.title === title );
 
   if (index > -1) {
     filmesFavoritos.splice(index, 1);
@@ -16,4 +21,9 @@ function addFilmeFavorito(title, cover) {
       });
       localStorage.setItem("filmesFavoritos", JSON.stringify(filmesFavoritos));
     }
+
+    console.log(filmesFavoritos)
 }
+
+
+addFav.forEach(item => item.addEventListener('click', addFilmeFavorito)
