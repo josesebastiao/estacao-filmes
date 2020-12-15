@@ -16,7 +16,7 @@ async function buscarGeneroFilme(){
 
 buscarGeneroFilme();
 
-let t = 500;
+let t = 1000;
 setTimeout(() => {
     preenchePopup();
 },t);
@@ -51,6 +51,17 @@ function preenchePopup() {
                 janelapop.style.left = `${vl}px`;
             };
             janelapop.style.top = `${imagem.offsetTop}px`;
+            for (let i=0; i < localStorage.length; i ++){
+                let key = localStorage.key(i);
+                if (key === "dark") {
+                    continue
+                } else {
+                    if (filmes[imagem.getAttribute("id")].id == key){
+                        imagem.classList.add("checked");
+                        break;
+                    };
+                }; 
+            };
             buscaDiretores(filmes[imagem.getAttribute("id")].id);
             let resumofilme = filmes[imagem.getAttribute("id")].overview;
             if (resumofilme == "") {resumofilme = "Sinopse não encontrada."};
