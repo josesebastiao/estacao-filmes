@@ -62,6 +62,19 @@ function preenchePopup() {
             document.getElementById("resumofilme").innerText = resumofilme;
             document.getElementById("anofilme").innerText = filmes[imagem.getAttribute("id")].release_date.substr(0,4);
             document.getElementById("generofilme").innerText = generoFilme;
+
+            heart.onclick = function(ev) {
+                ev.preventDefault();
+                
+                const filme = filmes[imagem.getAttribute("id")];
+                addFilmeFavorito(filme);
+
+                if (heart.style.fill == "rgb(235, 47, 160)") {
+                    heart.style.fill = "#0E2137";
+                } else {
+                    heart.style.fill = "#EB2FA0";
+                }; 
+            };
         };
         
         imagem.onmouseleave = function() {
@@ -78,16 +91,11 @@ function preenchePopup() {
             janelapop.style.zIndex = -1;
             janelapop.style.opacity = 0;
         };
+
+        
     };
 
-    heart.onclick = function(ev) {
-        ev.preventDefault();
-        if (heart.style.fill == "rgb(235, 47, 160)") {
-            heart.style.fill = "#0E2137";
-        } else {
-            heart.style.fill = "#EB2FA0";
-        }; 
-    };
+    
     clearInterval(t);
 };
 

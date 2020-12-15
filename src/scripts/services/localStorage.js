@@ -1,29 +1,54 @@
-const addFav = document.querySelectorAll('path.favourite'); //retorna um array
 
-function addFilmeFavorito() { // como vou fazer essa função ser ouvida por todos do array? forEach?
+function addFilmeFavorito(filme) { // como vou fazer essa função ser ouvida por todos do array? forEach?
 
-  let filmesFavoritos = [];
+  let filmesFavoritos = JSON.parse(localStorage.getItem('filmesFavoritos'));
+
+  if (!filmesFavoritos) filmesFavoritos = [];
   
-  let title = this.title // definitivamente não seria exatamente assim, mas pensei que seria inteligente usarmos o this
-  let cover = this.image 
+  const id = filme.id
+  const title = filme.title // definitivamente não seria exatamente assim, mas pensei que seria inteligente usarmos o this
+  const cover = filme.backdrop_path
 
-  var index = filmesFavoritos.findIndex(i => i.title === title );
+  const index = filmesFavoritos.findIndex(i => i.name === title );
 
   if (index > -1) {
-    filmesFavoritos.splice(index, 1);
-    localStorage.setItem("filmesFavoritos", JSON.stringify(filmesFavoritos));
+    const novosFavoritos = filmesFavoritos.filter(i => i.name !== title);
+    localStorage.setItem("filmesFavoritos", JSON.stringify(novosFavoritos));
     
   } else {
     filmesFavoritos.push(
       {
+        id: id,
         name: title,
         image: cover,
       });
       localStorage.setItem("filmesFavoritos", JSON.stringify(filmesFavoritos));
     }
-
-    console.log(filmesFavoritos)
 }
 
+/*
+function listarFilmeFavorito() {
+  let filmesFavoritos = JSON.parse(localStorage.getItem('filmesFavoritos'));
+  
+  if (!filmesFavoritos) return
 
-addFav.forEach(item => item.addEventListener('click', addFilmeFavorito)
+  const sectionCards = document.getElementsByClassName('cards')[0];
+
+  sectionCards.innerHTML = ``
+
+        filmesFavoritos.forEach(
+            (filme, indice) => {
+                sectionCards.innerHTML += `
+                <div class="card" id="${filme.id}">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/${filme.imagem}" alt="">
+                    <div class="card-footer">
+                    <p>${filme.name}</p>
+                    </div>
+                </div>
+                `
+            }
+
+
+
+}
+*/
