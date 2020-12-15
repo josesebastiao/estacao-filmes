@@ -1,7 +1,5 @@
 let generos = [];
 
-console.log('pop');
-
 async function buscarGeneroFilme(){
     fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=54d5d6e26602b36d146edeb90b272ae5&language=pt-BR")
     .then(function(response){
@@ -18,7 +16,6 @@ async function buscarGeneroFilme(){
 
 buscarGeneroFilme();
 
-console.log(generos);
 let t = 500;
 setTimeout(() => {
     preenchePopup();
@@ -62,18 +59,11 @@ function preenchePopup() {
             document.getElementById("resumofilme").innerText = resumofilme;
             document.getElementById("anofilme").innerText = filmes[imagem.getAttribute("id")].release_date.substr(0,4);
             document.getElementById("generofilme").innerText = generoFilme;
-
-            heart.onclick = function(ev) {
-                ev.preventDefault();
-                
-                const filme = filmes[imagem.getAttribute("id")];
-                addFilmeFavorito(filme);
-
-                if (heart.style.fill == "rgb(235, 47, 160)") {
-                    heart.style.fill = "#0E2137";
-                } else {
-                    heart.style.fill = "#EB2FA0";
-                }; 
+            janelapop.setAttribute('id',`#${imagem.getAttribute("id")}`);
+            if (document.getElementById(document.getElementsByClassName('pop')[0].id.slice(1)).classList == 'card checked') {
+                heart.style.fill = "#EB2FA0";
+            } else {
+                heart.style.fill = "#0E2137";
             };
         };
         
@@ -91,11 +81,20 @@ function preenchePopup() {
             janelapop.style.zIndex = -1;
             janelapop.style.opacity = 0;
         };
-
-        
     };
 
-    
+    heart.onclick = function(ev) {
+        ev.preventDefault();
+        document.getElementById(document.getElementsByClassName('pop')[0].id.slice(1)).classList.toggle('checked');
+        let pos = document.getElementById(document.getElementsByClassName('pop')[0].id.slice(1)).id;
+        if (document.getElementById(document.getElementsByClassName('pop')[0].id.slice(1)).classList == 'card checked') {
+            heart.style.fill = "#EB2FA0";
+            localStorage.setItem(filmes[pos].id,JSON.stringify(filmes[pos]))
+        } else {
+            heart.style.fill = "#0E2137";
+            localStorage.removeItem(filmes[pos].id);
+        }; 
+    };
     clearInterval(t);
 };
 
