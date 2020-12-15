@@ -1,6 +1,6 @@
 let filmes = [];
 let x = 0;
-for (let i=0; i < localStorage.length; i ++){
+for (let i=1; i < localStorage.length; i ++){
     let key = localStorage.key(i);
     if (key === "dark") {continue}; 
     let valores = localStorage.getItem(key);
