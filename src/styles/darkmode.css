@@ -172,3 +172,7 @@ body.darkmode header.desktop a.div-logo.dark {
 body.darkmode .devs:hover {
   box-shadow: 0 8px 16px 0 rgba(255,255,255,0.2);
 }
+
+body.darkmode .menu li ul li {
+  background-color: #0E2137;
+}
