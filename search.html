@@ -13,21 +13,21 @@
     <ul>
       <li>
         <a onclick="hamburguer()" href="javascript:void(0);">
-          <svg width="25.5" height="17.5" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <svg width="25.5" height="17.5" viewBox="0 0 51 35" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-hamburguer">
             <path d="M0 2H50M0.0468292 32.5H50.0468M0.0468292 17.5H50.0468" stroke="#0E2137" stroke-width="4"/>
           </svg>
         </a>
       </li>
       <li>
         <a href="/search.html">
-          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-search">
             <path d="M26.2917 23.1667H24.6458L24.0625 22.6042C26.1042 20.2292 27.3333 17.1458 27.3333 13.7917C27.3333 6.3125 21.2708 0.25 13.7917 0.25C6.3125 0.25 0.25 6.3125 0.25 13.7917C0.25 21.2708 6.3125 27.3333 13.7917 27.3333C17.1458 27.3333 20.2292 26.1042 22.6042 24.0625L23.1667 24.6458V26.2917L33.5833 36.6875L36.6875 33.5833L26.2917 23.1667V23.1667ZM13.7917 23.1667C8.60417 23.1667 4.41667 18.9792 4.41667 13.7917C4.41667 8.60417 8.60417 4.41667 13.7917 4.41667C18.9792 4.41667 23.1667 8.60417 23.1667 13.7917C23.1667 18.9792 18.9792 23.1667 13.7917 23.1667Z" fill="#0E2137"/>
           </svg>
         </a>
       </li>
       <li>
         <a href="/favorites.html">
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
+          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-hart">
             <path d="M30 53.375L26.375 50.075C13.5 38.4 5 30.7 5 21.25C5 13.55 11.05 7.5 18.75 7.5C23.1 7.5 27.275 9.525 30 12.725C32.725 9.525 36.9 7.5 41.25 7.5C48.95 7.5 55 13.55 55 21.25C55 30.7 46.5 38.4 33.625 50.1L30 53.375Z" fill="#0E2137"/>
           </svg>
         </a>
@@ -44,14 +44,14 @@
           </label>
         </a></li>
         <li><a href="/favorites.html">Favoritos</a></li>
-        <li><a href="/search.html">Pesquisar</a></li>
+        <!-- <li><a href="/search.html">Pesquisar</a></li> -->
         <li onclick="category()"><a>Categorias</a>
           <ul id="subcategory">
-            <li><a href="#">Ação</a></li>
-            <li><a href="#">Drama</a></li>
-            <li><a href="#">Comédia</a></li>
-            <li><a href="#">Ficção</a></li>
-            <li><a href="#">Terror</a></li>
+            <li><a href="#" class="subcategories" id="28">Ação</a></li>
+          <li><a href="#" class="subcategories" id="18">Drama</a></li>
+          <li><a href="#" class="subcategories" id="35">Comédia</a></li>
+          <li><a href="#" class="subcategories" id="878">Ficção</a></li>
+          <li><a href="#" class="subcategories" id="27">Terror</a></li>
           </ul>
         </li>
         <li><a href="/about.html">Sobre</a></li>
@@ -60,20 +60,20 @@
   </header>
 
   <header class="desktop">
-    <a  class="logo-desktop light" href="/"><img src="/public/assets/logo-light.svg" alt="Logotipo Estação Filmes"></a>
-    <a  class="logo-desktop dark" href="/"><img src="/public/assets/logo-dark.svg" alt="Logotipo Estação Filmes"></a>
+    <a  class="div-logo light" href="/"><img src="/public/assets/logo-light.svg" alt="Logotipo Estação Filmes"></a>
+    <a  class="div-logo dark" href="/"><img src="/public/assets/logo-dark.svg" alt="Logotipo Estação Filmes"></a>
 
-    <div class="search">
+    <div class="div-search">
       <input class="search" type="text" name="search" id="search">
-      <a href="/search.html">
+      <a href="javascript:void(0)" onclick=searchSubmit()>
         <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon search">
           <path d="M26.2917 23.1667H24.6458L24.0625 22.6042C26.1042 20.2292 27.3333 17.1458 27.3333 13.7917C27.3333 6.3125 21.2708 0.25 13.7917 0.25C6.3125 0.25 0.25 6.3125 0.25 13.7917C0.25 21.2708 6.3125 27.3333 13.7917 27.3333C17.1458 27.3333 20.2292 26.1042 22.6042 24.0625L23.1667 24.6458V26.2917L33.5833 36.6875L36.6875 33.5833L26.2917 23.1667V23.1667ZM13.7917 23.1667C8.60417 23.1667 4.41667 18.9792 4.41667 13.7917C4.41667 8.60417 8.60417 4.41667 13.7917 4.41667C18.9792 4.41667 23.1667 8.60417 23.1667 13.7917C23.1667 18.9792 18.9792 23.1667 13.7917 23.1667Z" fill="#0E2137"/>
         </svg>
       </a>
     </div>
 
-    <a class="heart-fav" href="/favorites.html">
-      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon heart">
+    <a class="div-hart" href="/favorites.html">
+      <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon hart">
         <path d="M30 53.375L26.375 50.075C13.5 38.4 5 30.7 5 21.25C5 13.55 11.05 7.5 18.75 7.5C23.1 7.5 27.275 9.525 30 12.725C32.725 9.525 36.9 7.5 41.25 7.5C48.95 7.5 55 13.55 55 21.25C55 30.7 46.5 38.4 33.625 50.1L30 53.375Z" fill="#0E2137"/>
       </svg>
     </a>
@@ -84,7 +84,7 @@
 
     <nav class="desktop-menu">
       <ul class="menu">
-        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li id="btnDark2" class="darkmode"><a>Darkmode 
             <label for="darkmode" id="darkmode">
             <input type="checkbox" id="darkmode" >
@@ -92,14 +92,14 @@
           </label>
         </a></li>
         <li><a href="/favorites.html">Favoritos</a></li>
-        <li><a href="/search.html">Pesquisar</a></li>
+        <!-- <li class="active"><a href="/search.html">Pesquisar</a></li> -->
         <li class="categories"><a href="">Categorias</a>
         <ul>
-            <li><a href="#">Ação</a></li>
-            <li><a href="#">Drama</a></li>
-            <li><a href="#">Comédia</a></li>
-            <li><a href="#">Ficção</a></li>
-            <li><a href="#">Terror</a></li>
+          <li><a href="#" class="subcategories" id="28">Ação</a></li>
+          <li><a href="#" class="subcategories" id="18">Drama</a></li>
+          <li><a href="#" class="subcategories" id="35">Comédia</a></li>
+          <li><a href="#" class="subcategories" id="878">Ficção</a></li>
+          <li><a href="#" class="subcategories" id="27">Terror</a></li>
           </ul>
         </li>
         <li><a href="/about.html">Sobre</a></li>
@@ -107,36 +107,16 @@
     </nav>
     <main>
       <div class="search-page">
-        <input type="text" name="search" id="search" placeholder="Digite o nome do filme ou o gênero...">
-        <a href="/search.html">
+        <input type="text" name="search" id="search-mobile" placeholder="Digite o nome do filme ou o gênero...">
+        <a href="javascript:void(0)" onclick=searchSubmit()>
           <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon">
             <path d="M26.2917 23.1667H24.6458L24.0625 22.6042C26.1042 20.2292 27.3333 17.1458 27.3333 13.7917C27.3333 6.3125 21.2708 0.25 13.7917 0.25C6.3125 0.25 0.25 6.3125 0.25 13.7917C0.25 21.2708 6.3125 27.3333 13.7917 27.3333C17.1458 27.3333 20.2292 26.1042 22.6042 24.0625L23.1667 24.6458V26.2917L33.5833 36.6875L36.6875 33.5833L26.2917 23.1667V23.1667ZM13.7917 23.1667C8.60417 23.1667 4.41667 18.9792 4.41667 13.7917C4.41667 8.60417 8.60417 4.41667 13.7917 4.41667C18.9792 4.41667 23.1667 8.60417 23.1667 13.7917C23.1667 18.9792 18.9792 23.1667 13.7917 23.1667Z" fill="#0E2137"/>
           </svg>
         </a>
       </div>
 
-      <section class="cards">
+      <section class="search-cards">
 
-        <div class="card">
-          <img src="./public/assets/img_movie.png" alt="">
-          <div class="card-footer">
-            <p>Avengers End Game</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./public/assets/img_movie.png" alt="">
-          <div class="card-footer">
-            <p>Avengers End Game</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="./public/assets/img_movie.png" alt="">
-          <div class="card-footer">
-            <p>Avengers End Game</p>
-          </div>
-        </div>
 
       </section>
 
@@ -144,7 +124,42 @@
     </main>
 
   </div>
-  
+  <section class="pop">
+    <h1 id="h1titulofilme">Titulo do filme</h1>
+    <section class="cdescricao">
+      <ul>
+        <li class="halfline">
+            <p id="titulo">Título:</p>
+            <p class="vl" id="titulofilme">Título do filme</p>
+        </li>
+        <li class="halfline">
+            <p class="lbl">Gênero:</p>
+            <p class="vl" id="generofilme">Gênero do filme</p>
+        </li>
+        <li class="halfline">
+            <p class="lbl">Lançamento:</p>
+            <p class="vl" id="anofilme">1984</p>
+        </li>
+        <li class="halfline">
+            <p class="lbl">Diretor:</p> 
+            <p class="vl" id="diretorfilme">Nome do Diretor</p>
+        </li>
+        <div id="heart">
+            <ul>
+                <li class="lbl">Sinopse:</li>
+                <li>
+                    <a href="#">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 53.375L26.375 50.075C13.5 38.4 5 30.7 5 21.25C5 13.55 11.05 7.5 18.75 7.5C23.1 7.5 27.275 9.525 30 12.725C32.725 9.525 36.9 7.5 41.25 7.5C48.95 7.5 55 13.55 55 21.25C55 30.7 46.5 38.4 33.625 50.1L30 53.375Z" fill="#0E2137" class="favourite"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p id="resumofilme">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+      </ul>
+    </section>
+  </section>
   
 
   <footer>
@@ -153,5 +168,8 @@
   
   <script src="./src/scripts/script.js"></script>
   <script src="./src/scripts/dark-mode.js"></script>
+  <script src="./src/scripts/services/api-search.js"></script>
+  <script src="./src/scripts/services/categories.js"></script>
+  <script src="./src/scripts/popupscript.js"></script>
 </body>
 </html>

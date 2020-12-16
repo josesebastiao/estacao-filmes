@@ -1,8 +1,14 @@
 .pop {
     border: 3px solid #EB2FA0;
-    width: 500px;
+    max-width: 425px;
     border-radius: 10px;
     box-sizing: border-box;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    left: 0;
+    background-color: white;
+    top: -500px;
 }
 
 .pop h1 {
@@ -70,6 +76,7 @@ ul{
 #resumofilme {
     max-width: 85%;
     text-align: justify;
+    margin: 2%;
 }
 
 #titulo {
